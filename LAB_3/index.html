@@ -1,0 +1,70 @@
+<html>
+    <body>
+        <div>Hello JavaCsript</div>
+    </body>
+
+    <script>
+        // alert("Hello JS");
+
+            // varriable
+            var a = 10; //  global
+            var name;
+            let age = 15;   // member scope
+            const x = "BRU";
+
+            console.log(x);
+
+            function add(a,b){
+                let c = a + b;
+                return c;
+            }
+
+            let total = add(3,5);
+            console.log(total);
+
+            let add2 = function(aa,bb){
+                let c= aa + bb;
+                return c;
+            }
+
+            let add3 = (a,b) => {
+                return a + b;
+            }
+
+            let arr =[-1,2,5,"name"];
+            console.log(arr[3]);
+
+            const car = Array("Toyota","Honda");
+
+            let arp = [[2,5,0],"age"];
+
+            let person = {
+                name: "King",
+                lastname: "srimart",
+                age: 19,
+                child: ["jhin","joon"],
+                fullName: function(){
+                    return this.name + " " + this.lastname;
+                }
+            }
+
+            console.log(person.fullName(),person.child[1]);
+
+            let arr3 = [...arr,...arr];
+            let arr4 = [car,arr];
+
+            console.log(arr3);
+            console.log(arr4);
+
+
+            if(3<5){
+                console.log("true");
+            }
+            else
+                console.log("false");
+
+
+            let check = 3<5 ? "true" : "false";
+
+    </script>
+</html>
